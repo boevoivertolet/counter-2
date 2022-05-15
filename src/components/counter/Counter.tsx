@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Button} from './button/Button';
+import {UniversalButton} from '../button/UniversalButton';
+import {Button, ButtonGroup} from '@mui/material';
 
 
 export function Counter() {
@@ -21,25 +22,30 @@ export function Counter() {
 
 
     return (
-        <div className={'counter'}>
-            <div className={result===maxValue?'table': 'table1'}>{result}</div>
-            <div>
-                <span className={'buttons'}>
-                    <Button
-                        title={'inc'}
-                        onClickHandler={incOne}
-                        disableCase={disableInc}
-                        result={result}
-                    />
+        <div>
+            <div className={result === maxValue ? 'table' : 'table1'}>{result}</div>
+            <ButtonGroup variant="outlined" aria-label="outlined primary button group">
+                <div>
+                    <Button key="one">
+                        <UniversalButton
+                            title={'inc'}
+                            onClickHandler={incOne}
+                            disableCase={disableInc}
+                            result={result}
+                        />
+                    </Button>
 
 
-                    <Button
-                        title={'reset'}
-                        onClickHandler={reset}
-                        disableCase={disableRes}
-                        result={result}/>
-                </span>
-            </div>
+                    <Button key="two">
+                        <UniversalButton
+                            title={'reset'}
+                            onClickHandler={reset}
+                            disableCase={disableRes}
+                            result={result}/>
+                    </Button>
+                </div>
+            </ButtonGroup>
+
         </div>
 
     )

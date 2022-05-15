@@ -1,38 +1,20 @@
-.App {
-
-}
-
-.counter {
-    border: 1px solid green;
-    width: 200px;
-    padding: 30px;
-    margin: 100px;
-
+.border{
+    margin: 300px;
 }
 .table{
-    align-content: center;
-    border: 1px solid green;
-    width: 150px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     color: red;
-}
-.buttons{
-    margin: 15px;
-    padding: 5px;
-    border: 1px solid green;
-    display: flex;
-    justify-content: space-around;
-
+    width: auto;
+    height: 15px;
+    padding: 20px;
+    font-size: 20px;
 }
 .table1{
-    align-content: center;
-    border: 1px solid green;
-    width: 150px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: space-around;
-    color: black;
+    text-align: center;
+    color: #2374CE;
+    width: auto;
+    height: 15px;
+    padding: 20px;
+    font-size: 20px;
 
 }
