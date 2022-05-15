@@ -1,15 +1,17 @@
 import React from 'react';
+import {Input} from '@mui/material';
 
 
+type UniversalInputPropsType = {
+    title: string
+}
 
 
-
-
-
-export function UniversalInput() {
+export function UniversalInput(props: UniversalInputPropsType) {
     return (
-        <div>
-            <input  type="number" min="3" max="20" step="1"/>
+        <div className={'settings'}>
+            <span>{props.title}</span>
+            <Input className={'inputWidth'} type="number"/>
         </div>
     )
 }

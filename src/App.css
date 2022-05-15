@@ -1,5 +1,5 @@
 .border{
-    margin: 300px;
+    margin: 50px;
 }
 .table{
     text-align: center;
@@ -17,4 +17,15 @@
     padding: 20px;
     font-size: 20px;
 
+}
+.settings{
+    width: 200px;
+    text-align: center;
+}
+.inputWidth{
+    width: 70px;
+    margin-left: 30px;
+}
+.text color{
+    color: #2374CE;
 }

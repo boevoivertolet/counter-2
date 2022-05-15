@@ -7,6 +7,7 @@ import {Settings} from './components/settings/Settings';
 
 function App() {
     return (
+        <div>
             <Container className={'border'} fixed>
                 <Grid container spacing ={10}>
                     <Grid item>
@@ -15,6 +16,8 @@ function App() {
                         </Paper>
                     </Grid>
                 </Grid>
+            </Container>
+            <Container className={'border'} fixed>
                 <Grid container spacing ={10}>
                     <Grid item>
                         <Paper  elevation={24} >
@@ -23,6 +26,7 @@ function App() {
                     </Grid>
                 </Grid>
             </Container>
+        </div>
     );
 }
 
